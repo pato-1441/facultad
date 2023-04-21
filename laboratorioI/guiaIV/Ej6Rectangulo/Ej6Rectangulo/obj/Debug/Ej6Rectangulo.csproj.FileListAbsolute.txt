@@ -1,0 +1,8 @@
+E:\Facultad\facultad-git\laboratorioI\guiaIV\Ej6Rectangulo\Ej6Rectangulo\bin\Debug\Ej6Rectangulo.exe.config
+E:\Facultad\facultad-git\laboratorioI\guiaIV\Ej6Rectangulo\Ej6Rectangulo\bin\Debug\Ej6Rectangulo.exe
+E:\Facultad\facultad-git\laboratorioI\guiaIV\Ej6Rectangulo\Ej6Rectangulo\bin\Debug\Ej6Rectangulo.pdb
+E:\Facultad\facultad-git\laboratorioI\guiaIV\Ej6Rectangulo\Ej6Rectangulo\obj\Debug\Ej6Rectangulo.csproj.AssemblyReference.cache
+E:\Facultad\facultad-git\laboratorioI\guiaIV\Ej6Rectangulo\Ej6Rectangulo\obj\Debug\Ej6Rectangulo.csproj.SuggestedBindingRedirects.cache
+E:\Facultad\facultad-git\laboratorioI\guiaIV\Ej6Rectangulo\Ej6Rectangulo\obj\Debug\Ej6Rectangulo.csproj.CoreCompileInputs.cache
+E:\Facultad\facultad-git\laboratorioI\guiaIV\Ej6Rectangulo\Ej6Rectangulo\obj\Debug\Ej6Rectangulo.exe
+E:\Facultad\facultad-git\laboratorioI\guiaIV\Ej6Rectangulo\Ej6Rectangulo\obj\Debug\Ej6Rectangulo.pdb
