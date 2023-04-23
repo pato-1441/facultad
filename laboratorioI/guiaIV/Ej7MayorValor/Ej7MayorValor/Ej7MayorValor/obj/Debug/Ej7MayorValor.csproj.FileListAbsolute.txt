@@ -1,0 +1,8 @@
+E:\Facultad\facultad-git\laboratorioI\guiaIV\Ej7MayorValor\Ej7MayorValor\Ej7MayorValor\bin\Debug\Ej7MayorValor.exe.config
+E:\Facultad\facultad-git\laboratorioI\guiaIV\Ej7MayorValor\Ej7MayorValor\Ej7MayorValor\bin\Debug\Ej7MayorValor.exe
+E:\Facultad\facultad-git\laboratorioI\guiaIV\Ej7MayorValor\Ej7MayorValor\Ej7MayorValor\bin\Debug\Ej7MayorValor.pdb
+E:\Facultad\facultad-git\laboratorioI\guiaIV\Ej7MayorValor\Ej7MayorValor\Ej7MayorValor\obj\Debug\Ej7MayorValor.csproj.AssemblyReference.cache
+E:\Facultad\facultad-git\laboratorioI\guiaIV\Ej7MayorValor\Ej7MayorValor\Ej7MayorValor\obj\Debug\Ej7MayorValor.csproj.SuggestedBindingRedirects.cache
+E:\Facultad\facultad-git\laboratorioI\guiaIV\Ej7MayorValor\Ej7MayorValor\Ej7MayorValor\obj\Debug\Ej7MayorValor.csproj.CoreCompileInputs.cache
+E:\Facultad\facultad-git\laboratorioI\guiaIV\Ej7MayorValor\Ej7MayorValor\Ej7MayorValor\obj\Debug\Ej7MayorValor.exe
+E:\Facultad\facultad-git\laboratorioI\guiaIV\Ej7MayorValor\Ej7MayorValor\Ej7MayorValor\obj\Debug\Ej7MayorValor.pdb
