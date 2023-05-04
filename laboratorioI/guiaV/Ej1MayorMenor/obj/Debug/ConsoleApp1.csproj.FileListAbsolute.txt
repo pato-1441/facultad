@@ -1,0 +1,3 @@
+E:\Facultad\facultad-git\laboratorioI\guiaV\Ej1MayorMenor\obj\Debug\ConsoleApp1.csproj.AssemblyReference.cache
+E:\Facultad\facultad-git\laboratorioI\guiaV\Ej1MayorMenor\obj\Debug\ConsoleApp1.csproj.SuggestedBindingRedirects.cache
+E:\Facultad\facultad-git\laboratorioI\guiaV\Ej1MayorMenor\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache

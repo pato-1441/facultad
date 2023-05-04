@@ -1,0 +1,8 @@
+E:\Facultad\facultad-git\laboratorioI\guiaV\Ej5Lluvias\Ej5Lluvias\Ej5Lluvias\bin\Debug\Ej5Lluvias.exe.config
+E:\Facultad\facultad-git\laboratorioI\guiaV\Ej5Lluvias\Ej5Lluvias\Ej5Lluvias\bin\Debug\Ej5Lluvias.exe
+E:\Facultad\facultad-git\laboratorioI\guiaV\Ej5Lluvias\Ej5Lluvias\Ej5Lluvias\bin\Debug\Ej5Lluvias.pdb
+E:\Facultad\facultad-git\laboratorioI\guiaV\Ej5Lluvias\Ej5Lluvias\Ej5Lluvias\obj\Debug\Ej5Lluvias.csproj.AssemblyReference.cache
+E:\Facultad\facultad-git\laboratorioI\guiaV\Ej5Lluvias\Ej5Lluvias\Ej5Lluvias\obj\Debug\Ej5Lluvias.csproj.SuggestedBindingRedirects.cache
+E:\Facultad\facultad-git\laboratorioI\guiaV\Ej5Lluvias\Ej5Lluvias\Ej5Lluvias\obj\Debug\Ej5Lluvias.csproj.CoreCompileInputs.cache
+E:\Facultad\facultad-git\laboratorioI\guiaV\Ej5Lluvias\Ej5Lluvias\Ej5Lluvias\obj\Debug\Ej5Lluvias.exe
+E:\Facultad\facultad-git\laboratorioI\guiaV\Ej5Lluvias\Ej5Lluvias\Ej5Lluvias\obj\Debug\Ej5Lluvias.pdb
