@@ -1,0 +1,8 @@
+E:\Facultad\facultad-git\laboratorioI\guiaVI\Ej1\bin\Debug\Ej1.exe.config
+E:\Facultad\facultad-git\laboratorioI\guiaVI\Ej1\bin\Debug\Ej1.exe
+E:\Facultad\facultad-git\laboratorioI\guiaVI\Ej1\bin\Debug\Ej1.pdb
+E:\Facultad\facultad-git\laboratorioI\guiaVI\Ej1\obj\Debug\Ej1.csproj.AssemblyReference.cache
+E:\Facultad\facultad-git\laboratorioI\guiaVI\Ej1\obj\Debug\Ej1.csproj.SuggestedBindingRedirects.cache
+E:\Facultad\facultad-git\laboratorioI\guiaVI\Ej1\obj\Debug\Ej1.csproj.CoreCompileInputs.cache
+E:\Facultad\facultad-git\laboratorioI\guiaVI\Ej1\obj\Debug\Ej1.exe
+E:\Facultad\facultad-git\laboratorioI\guiaVI\Ej1\obj\Debug\Ej1.pdb
