@@ -1,8 +1,0 @@
-E:\Facultad\facultad-git\laboratorioI\guiaVI\Ej2\Ej2\bin\Debug\Ej2.exe.config
-E:\Facultad\facultad-git\laboratorioI\guiaVI\Ej2\Ej2\bin\Debug\Ej2.exe
-E:\Facultad\facultad-git\laboratorioI\guiaVI\Ej2\Ej2\bin\Debug\Ej2.pdb
-E:\Facultad\facultad-git\laboratorioI\guiaVI\Ej2\Ej2\obj\Debug\Ej2.csproj.AssemblyReference.cache
-E:\Facultad\facultad-git\laboratorioI\guiaVI\Ej2\Ej2\obj\Debug\Ej2.csproj.SuggestedBindingRedirects.cache
-E:\Facultad\facultad-git\laboratorioI\guiaVI\Ej2\Ej2\obj\Debug\Ej2.csproj.CoreCompileInputs.cache
-E:\Facultad\facultad-git\laboratorioI\guiaVI\Ej2\Ej2\obj\Debug\Ej2.exe
-E:\Facultad\facultad-git\laboratorioI\guiaVI\Ej2\Ej2\obj\Debug\Ej2.pdb

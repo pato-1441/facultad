@@ -1,8 +1,0 @@
-E:\Facultad\facultad-git\laboratorioI\guiaVI\Ej3\Ej3\bin\Debug\Ej3.exe.config
-E:\Facultad\facultad-git\laboratorioI\guiaVI\Ej3\Ej3\bin\Debug\Ej3.exe
-E:\Facultad\facultad-git\laboratorioI\guiaVI\Ej3\Ej3\bin\Debug\Ej3.pdb
-E:\Facultad\facultad-git\laboratorioI\guiaVI\Ej3\Ej3\obj\Debug\Ej3.csproj.AssemblyReference.cache
-E:\Facultad\facultad-git\laboratorioI\guiaVI\Ej3\Ej3\obj\Debug\Ej3.csproj.SuggestedBindingRedirects.cache
-E:\Facultad\facultad-git\laboratorioI\guiaVI\Ej3\Ej3\obj\Debug\Ej3.csproj.CoreCompileInputs.cache
-E:\Facultad\facultad-git\laboratorioI\guiaVI\Ej3\Ej3\obj\Debug\Ej3.exe
-E:\Facultad\facultad-git\laboratorioI\guiaVI\Ej3\Ej3\obj\Debug\Ej3.pdb
