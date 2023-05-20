@@ -11,7 +11,7 @@ namespace EjEnClase
         static void Main(string[] args)
         {
             double promedioMatriz, promedioTotal, acumuladorTotal=0;
-            int acumuladorMatriz, numero, contadorFila, contadorMatrizFila;
+            int acumuladorMatriz, numero, contadorFila, contadorMatrizFila, contadorFilaTotal=0;
             bool diecisiete=false;
 
             Random random = new Random();
@@ -82,6 +82,7 @@ namespace EjEnClase
                     Console.BackgroundColor = ConsoleColor.Red;
                     Console.WriteLine("{0,6:f2}", promedioMatriz);
                     acumuladorTotal += promedioMatriz;
+                    contadorFilaTotal++;
                 } else
                 {
                     Console.ForegroundColor = ConsoleColor.White;
@@ -89,7 +90,7 @@ namespace EjEnClase
                     Console.WriteLine("0,00");
                 }                             
             }
-            promedioTotal = (double)acumuladorTotal / contadorFila;
+            promedioTotal = (double)acumuladorTotal / contadorFilaTotal;
             Console.ForegroundColor = ConsoleColor.White;
             Console.BackgroundColor = ConsoleColor.Black;
             Console.WriteLine("Promedio: {0,6:f2}", promedioTotal);

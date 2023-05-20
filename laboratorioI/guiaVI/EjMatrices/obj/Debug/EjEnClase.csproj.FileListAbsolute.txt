@@ -1,8 +1,8 @@
-E:\Facultad\facultad-git\laboratorioI\guiaVI\EjEnClase\bin\Debug\EjEnClase.exe.config
-E:\Facultad\facultad-git\laboratorioI\guiaVI\EjEnClase\bin\Debug\EjEnClase.exe
-E:\Facultad\facultad-git\laboratorioI\guiaVI\EjEnClase\bin\Debug\EjEnClase.pdb
-E:\Facultad\facultad-git\laboratorioI\guiaVI\EjEnClase\obj\Debug\EjEnClase.csproj.AssemblyReference.cache
-E:\Facultad\facultad-git\laboratorioI\guiaVI\EjEnClase\obj\Debug\EjEnClase.csproj.SuggestedBindingRedirects.cache
-E:\Facultad\facultad-git\laboratorioI\guiaVI\EjEnClase\obj\Debug\EjEnClase.csproj.CoreCompileInputs.cache
-E:\Facultad\facultad-git\laboratorioI\guiaVI\EjEnClase\obj\Debug\EjEnClase.exe
-E:\Facultad\facultad-git\laboratorioI\guiaVI\EjEnClase\obj\Debug\EjEnClase.pdb
+E:\Facultad\facultad-git\laboratorioI\guiaVI\EjMatrices\bin\Debug\EjEnClase.exe.config
+E:\Facultad\facultad-git\laboratorioI\guiaVI\EjMatrices\bin\Debug\EjEnClase.exe
+E:\Facultad\facultad-git\laboratorioI\guiaVI\EjMatrices\bin\Debug\EjEnClase.pdb
+E:\Facultad\facultad-git\laboratorioI\guiaVI\EjMatrices\obj\Debug\EjEnClase.csproj.AssemblyReference.cache
+E:\Facultad\facultad-git\laboratorioI\guiaVI\EjMatrices\obj\Debug\EjEnClase.csproj.SuggestedBindingRedirects.cache
+E:\Facultad\facultad-git\laboratorioI\guiaVI\EjMatrices\obj\Debug\EjEnClase.csproj.CoreCompileInputs.cache
+E:\Facultad\facultad-git\laboratorioI\guiaVI\EjMatrices\obj\Debug\EjEnClase.exe
+E:\Facultad\facultad-git\laboratorioI\guiaVI\EjMatrices\obj\Debug\EjEnClase.pdb
