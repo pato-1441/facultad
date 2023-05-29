@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ConsoleApp1
+namespace TpN2
 {
     internal class Program
     {
@@ -27,8 +23,8 @@ namespace ConsoleApp1
             int edad, cantIndividual = 0, grupo, cantPersonas = 0, cantMenores = 0, cantPer10y15 = 0, cantMayores = 0,
                 cantPasaporte = 0, acumEdadTotal = 0, opcion = -1;
 
-            double recaudacionTicket = 0, recaudacionPasaporte = 0, recaudacionGrupoPasaporte = 0, recaudacionTotal = 0,
-                   ticketMenores4 = 150, ticketMenores11 = 750, ticketMenores16 = 1200, ticketMayores = 1500, promedioEdadTotal=0;
+            double recaudacionTicket = 0, recaudacionTicketTotal = 0, recaudacionPasaporte = 0, recaudacionGrupoPasaporte = 0, recaudacionTotal = 0,
+                   ticketMenores4 = 150, ticketMenores11 = 750, ticketMenores16 = 1200, ticketMayores = 1500, promedioEdadTotal = 0;
 
             string teclaCompra;
 
@@ -53,7 +49,7 @@ namespace ConsoleApp1
                         cantPersonas++;
                         acumEdadTotal += edad;
                         cantIndividual++;
-
+                        recaudacionTicket = 0;
                         //ITERACION INDIVIDUAL
 
                         while (edad != -1)
@@ -83,9 +79,9 @@ namespace ConsoleApp1
 
                             if (edad != -1)
                             {
-                               cantPersonas++;
-                               acumEdadTotal += edad;
-                            }                           
+                                cantPersonas++;
+                                acumEdadTotal += edad;
+                            }
                         }
 
                         Console.WriteLine("El valor del ticket es de: {0:c}", recaudacionTicket);
@@ -100,6 +96,7 @@ namespace ConsoleApp1
                         {
                             case "s":
                             case "S":
+                                recaudacionTicketTotal += recaudacionTicket;
                                 break;
                             case "n":
                             case "N":
@@ -122,68 +119,85 @@ namespace ConsoleApp1
                         grupo = Convert.ToInt32(Console.ReadLine());
                         cantPersonas += grupo;
                         cantPasaporte += grupo;
+
                         //ITERACION PASAPORTE
-
-                        recaudacionGrupoPasaporte = 0;
-
-                        for (int i = 1; i <= grupo; i++)
+                        if (grupo < 4 || grupo > 10)
                         {
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("EL GRUPO DEBE SER MINIMO DE 4 PERSONAS Y 10 DE MAXIMO");
+                        }
+                        else
+                        {
+                            recaudacionGrupoPasaporte = 0;
+                            for (int i = 1; i <= grupo; i++)
+                            {
 
-                            Console.Write("Ingrese edad: ");
-                            edad = Convert.ToInt32(Console.ReadLine());
-                            acumEdadTotal += edad;
-                            if (edad > 9 && edad < 16)
-                            {
-                                cantPer10y15++;
+                                Console.Write("Ingrese edad: ");
+                                edad = Convert.ToInt32(Console.ReadLine());
+                                acumEdadTotal += edad;
+                                if (edad > 9 && edad < 16)
+                                {
+                                    cantPer10y15++;
+                                }
+                                if (edad < 4)
+                                {
+                                    cantMenores++;
+                                    recaudacionGrupoPasaporte += ticketMenores4;
+                                }
+                                else if (edad < 11)
+                                {
+                                    cantMenores++;
+                                    recaudacionGrupoPasaporte += (ticketMenores11 * 0.85);
+                                }
+                                else if (edad < 16)
+                                {
+                                    cantMenores++;
+                                    recaudacionGrupoPasaporte += (ticketMenores16 * 0.85);
+                                }
+                                else if (edad < 21)
+                                {
+                                    cantMenores++;
+                                    recaudacionGrupoPasaporte += (ticketMayores * 0.85);
+                                }
+                                else
+                                {
+                                    cantMayores++;
+                                    recaudacionGrupoPasaporte += (ticketMayores * 0.85);
+                                }
                             }
-                            if (edad < 4)
+                            if (cantMenores == 5 && cantMayores == 0 || cantMenores == 10)
                             {
-                                cantMenores++;
-                                recaudacionGrupoPasaporte += ticketMenores4;
+                                Console.ForegroundColor = ConsoleColor.Red;
+                                Console.WriteLine("SE NECESITA UN ADULTO RESPONSABLE");
+                                cantPer10y15 = 0;
+                                cantPersonas = 0;
                             }
-                            else if (edad < 11)
-                            {
-                                cantMenores++;
-                                recaudacionGrupoPasaporte += (ticketMenores11*0.85);
-                            }
-                            else if (edad < 16)
-                            {
-                                cantMenores++;
-                                recaudacionGrupoPasaporte += (ticketMenores16 * 0.85);
-                }
-                            else if (edad < 21)
-                            {
-                                cantMenores++;
-                                recaudacionGrupoPasaporte += (ticketMayores * 0.85);
-                }
                             else
                             {
-                                cantMayores++;
-                                recaudacionGrupoPasaporte += (ticketMayores * 0.85);
-                }
+                                Console.WriteLine("El valor del ticket es de: {0:c}", recaudacionGrupoPasaporte);
+                                Console.WriteLine("Desea confirmar la compra? [s/n]");
+                                teclaCompra = Console.ReadLine();
+                                while (teclaCompra != "s" && teclaCompra != "S" && teclaCompra != "n" && teclaCompra != "N")
+                                {
+                                    Console.WriteLine("Por favor escriba S/s o N/n");
+                                    teclaCompra = Console.ReadLine();
+                                }
+                                switch (teclaCompra)
+                                {
+                                    case "s":
+                                    case "S":
+                                        recaudacionPasaporte += recaudacionGrupoPasaporte;
+                                        break;
+                                    case "n":
+                                    case "N":
+                                        cantPersonas -= cantPersonas;
+                                        break;
+                                }
 
+                            }
                         }
-                        Console.WriteLine("El valor del ticket es de: {0:c}", recaudacionGrupoPasaporte);
-                        Console.WriteLine("Desea confirmar la compra? [s/n]");
-                        teclaCompra = Console.ReadLine();
-                        while (teclaCompra != "s" && teclaCompra != "S" && teclaCompra != "n" && teclaCompra != "N")
-                        {
-                            Console.WriteLine("Por favor escriba S/s o N/n");
-                            teclaCompra = Console.ReadLine();
-                        }
-                        switch (teclaCompra)
-                        {
-                            case "s":
-                            case "S":
-                                recaudacionPasaporte += recaudacionGrupoPasaporte;
-                                break;
-                            case "n":
-                            case "N":
-                                cantPersonas -= cantPersonas;
-                                break;
-                        }
+                        Console.ForegroundColor = ConsoleColor.White;
                         Console.WriteLine("Presione una tecla para volver al menu principal");
-
                         break;
 
                     case 3:
@@ -191,13 +205,14 @@ namespace ConsoleApp1
                         Console.ForegroundColor = ConsoleColor.Yellow;
                         Console.WriteLine("\t\t\t\t\t\t\tTicket");
                         Console.ForegroundColor = ConsoleColor.White;
-                        recaudacionTotal = recaudacionPasaporte + recaudacionTicket;
+                        recaudacionTotal = recaudacionPasaporte + recaudacionTicketTotal;
                         promedioEdadTotal = (double)acumEdadTotal / cantPersonas;
                         if (cantPersonas > 0)
                         {
+                            Console.WriteLine("La cantidad de personas que asisteron es de: {0}", cantPersonas);
                             Console.WriteLine("La recaudacion del dia es de: {0:c}", recaudacionTotal);
                             Console.WriteLine("La recaudacion de los pasaportes es de: {0:c}", recaudacionPasaporte);
-                            Console.WriteLine("La recaudacion de tickets individuales es de: {0:c}\n", recaudacionTicket);
+                            Console.WriteLine("La recaudacion de tickets individuales es de: {0:c}\n", recaudacionTicketTotal);
                             Console.WriteLine("Cantidad de personas que entraron con pasaporte: {0}", cantPasaporte);
                             Console.WriteLine("Cantidad de personas entre 10 y 15 años: {0}", cantPer10y15);
                             Console.WriteLine("El promedio de edad de todos los asistentes es de: {0:F3}", promedioEdadTotal);
@@ -207,7 +222,6 @@ namespace ConsoleApp1
                             Console.WriteLine("No asistio gente");
                         }
                         break;
-
                 }
                 Console.ReadKey();
             }

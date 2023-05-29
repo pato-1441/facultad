@@ -1,0 +1,8 @@
+E:\Facultad\facultad-git\laboratorioI\tpN2\bin\Debug\TpN2.exe.config
+E:\Facultad\facultad-git\laboratorioI\tpN2\bin\Debug\TpN2.exe
+E:\Facultad\facultad-git\laboratorioI\tpN2\bin\Debug\TpN2.pdb
+E:\Facultad\facultad-git\laboratorioI\tpN2\obj\Debug\TpN2.csproj.AssemblyReference.cache
+E:\Facultad\facultad-git\laboratorioI\tpN2\obj\Debug\TpN2.csproj.SuggestedBindingRedirects.cache
+E:\Facultad\facultad-git\laboratorioI\tpN2\obj\Debug\TpN2.csproj.CoreCompileInputs.cache
+E:\Facultad\facultad-git\laboratorioI\tpN2\obj\Debug\TpN2.exe
+E:\Facultad\facultad-git\laboratorioI\tpN2\obj\Debug\TpN2.pdb
