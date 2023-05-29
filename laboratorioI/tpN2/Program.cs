@@ -165,7 +165,7 @@ namespace TpN2
                                     recaudacionGrupoPasaporte += (ticketMayores * 0.85);
                                 }
                             }
-                            if (cantMenores == 5 && cantMayores == 0 || cantMenores == 10)
+                            if (cantMenores >= 5 && cantMayores == 0 || cantMenores == 10)
                             {
                                 Console.ForegroundColor = ConsoleColor.Red;
                                 Console.WriteLine("SE NECESITA UN ADULTO RESPONSABLE");
