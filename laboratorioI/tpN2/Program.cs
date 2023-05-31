@@ -9,83 +9,76 @@ namespace TpN2
             Console.BackgroundColor = ConsoleColor.DarkCyan;
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("\t\t\t\t\t¡¡Hola bienvenido al PARQUE DE DIVERSIONES!!");
+            Console.WriteLine("\t¡Hola bienvenido al parque de diversiones!\n");
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("\n\tElija una opcion de compra");
-            Console.WriteLine("*   1 - Comprar entrada individual    *");
-            Console.WriteLine("*   2 – Comprar entrada pasaporte     *");
-            Console.WriteLine("*   3 – Cerrar caja                   *");
-            Console.Write("    Ingrese opcion deseada: ");
+            Console.WriteLine("\t╔═════════════════════════════════════╗");
+            Console.WriteLine("\t║   Elija una opcion de compra        ║");
+            Console.WriteLine("\t╠═════════════════════════════════════║");
+            Console.WriteLine("\t║   1 - Comprar entrada individual    ║");
+            Console.WriteLine("\t╠═════════════════════════════════════║");
+            Console.WriteLine("\t║   2 – Comprar entrada pasaporte     ║");
+            Console.WriteLine("\t╠═════════════════════════════════════║");
+            Console.WriteLine("\t║   3 – Cerrar caja                   ║");
+            Console.WriteLine("\t╚═════════════════════════════════════╝");
+            Console.Write("\n \tOpcion: ");
         }
         static void Main(string[] args)
         {
             //VARIABLES
-            int edad, cantIndividual = 0, grupo, cantPersonas = 0, cantMenores = 0, cantPer10y15 = 0, cantMayores = 0,
-                cantPasaporte = 0, acumEdadTotal = 0, opcion = -1;
 
-            double recaudacionTicket = 0, recaudacionTicketTotal = 0, recaudacionPasaporte = 0, recaudacionGrupoPasaporte = 0, recaudacionTotal = 0,
-                   ticketMenores4 = 150, ticketMenores11 = 750, ticketMenores16 = 1200, ticketMayores = 1500, promedioEdadTotal = 0;
+            int edad, grupo, cantGrupos = 0, opcion = -1,
+            cantPerIndividual = 0, cantPerPasaporte = 0, cantPersonasTotal, cantPersonas,
+            cantPer10y15, cantPer10y15Total = 0, cantMayores = 0, cantMenores = 0,
+            acumEdadTotal = 0, acumEdad;
+
+            double recaudacionTicket, recaudacionTicketTotal = 0, recaudacionPasaporte = 0, recaudacionGrupoPasaporte, recaudacionTotal,
+                   ticketMenores4 = 150, ticketMenores11 = 750, ticketMenores16 = 1200, ticketMayores = 1500, promedioEdadTotal;
 
             string teclaCompra;
 
             //MENU PRINCIPAL 
 
             while (opcion != 4)
-            {
+            { 
                 ActivarMenu();
                 opcion = Convert.ToInt32(Console.ReadLine());
                 switch (opcion)
                 {
                     case 1:
 
-                        //MENU INDIVUDUAL
 
                         Console.Clear();
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.WriteLine("\t\t\t\t\t\tCompra de entrada individual");
+                        Console.WriteLine("  Compra de entrada individual");
                         Console.ForegroundColor = ConsoleColor.White;
-                        Console.Write("Ingrese edad: ");
+                        Console.Write("\nIngrese edad o -1 para finalizar: ");
                         edad = Convert.ToInt32(Console.ReadLine());
-                        cantPersonas++;
-                        acumEdadTotal += edad;
-                        cantIndividual++;
                         recaudacionTicket = 0;
-                        //ITERACION INDIVIDUAL
+                        cantPersonas = 0;
+                        acumEdad = 0;
 
-                        while (edad != -1)
+                        while (edad != -1 && edad < 120)
                         {
+                           
                             if (edad < 16)
                             {
                                 Console.ForegroundColor = ConsoleColor.Red;
                                 Console.WriteLine("Usted no puede realizar esta compra");
                             }
-                            else if (edad < 21)
-                            {
-                                cantMenores++;
-                                cantIndividual++;
-                                recaudacionTicket += ticketMayores;
-                            }
                             else
                             {
-                                cantMayores++;
-                                cantIndividual++;
+                                acumEdad += edad;
+                                cantPersonas++;
                                 recaudacionTicket += ticketMayores;
                             }
-
 
                             Console.ForegroundColor = ConsoleColor.White;
                             Console.Write("Ingrese otra edad o -1 para finalizar: ");
                             edad = Convert.ToInt32(Console.ReadLine());
-
-                            if (edad != -1)
-                            {
-                                cantPersonas++;
-                                acumEdadTotal += edad;
-                            }
                         }
 
-                        Console.WriteLine("El valor del ticket es de: {0:c}", recaudacionTicket);
-                        Console.WriteLine("Desea confirmar la compra? [s/n]");
+                        Console.WriteLine("\nEl valor del ticket es de: {0:c}", recaudacionTicket);
+                        Console.WriteLine("\nDesea confirmar la compra? [s/n]");
                         teclaCompra = Console.ReadLine();
                         while (teclaCompra != "s" && teclaCompra != "S" && teclaCompra != "n" && teclaCompra != "N")
                         {
@@ -97,11 +90,15 @@ namespace TpN2
                             case "s":
                             case "S":
                                 recaudacionTicketTotal += recaudacionTicket;
+                                cantPerIndividual += cantPersonas;
+                                acumEdadTotal += acumEdad;
+                                if (cantPersonas > 1)
+                                {
+                                    cantGrupos++;
+                                }
                                 break;
                             case "n":
                             case "N":
-                                recaudacionTicket = 0;
-                                cantPersonas -= cantPersonas;
                                 break;
                         }
                         Console.WriteLine("Presione una tecla para volver al menu principal");
@@ -109,18 +106,18 @@ namespace TpN2
 
                     case 2:
 
-                        //MENU PASAPORTE
 
                         Console.Clear();
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.WriteLine("\t\t\t\t\t\tCompra de entrada pasaporte");
+                        Console.WriteLine("  Compra de entrada pasaporte");
                         Console.ForegroundColor = ConsoleColor.White;
-                        Console.WriteLine("Ingrese cantidad de personas");
+                        Console.Write("\nIngrese cantidad de personas:");
                         grupo = Convert.ToInt32(Console.ReadLine());
-                        cantPersonas += grupo;
-                        cantPasaporte += grupo;
 
-                        //ITERACION PASAPORTE
+
+                        cantPer10y15 = 0;
+                        acumEdad = 0;
+                        recaudacionGrupoPasaporte = 0;
                         if (grupo < 4 || grupo > 10)
                         {
                             Console.ForegroundColor = ConsoleColor.Red;
@@ -128,13 +125,13 @@ namespace TpN2
                         }
                         else
                         {
-                            recaudacionGrupoPasaporte = 0;
                             for (int i = 1; i <= grupo; i++)
                             {
-
-                                Console.Write("Ingrese edad: ");
+                                Console.Write("Ingrese edad N° {0}: ", i);
                                 edad = Convert.ToInt32(Console.ReadLine());
-                                acumEdadTotal += edad;
+                                acumEdad += edad;
+
+
                                 if (edad > 9 && edad < 16)
                                 {
                                     cantPer10y15++;
@@ -164,18 +161,19 @@ namespace TpN2
                                     cantMayores++;
                                     recaudacionGrupoPasaporte += (ticketMayores * 0.85);
                                 }
+                       
                             }
-                            if (cantMenores >= 5 && cantMayores == 0 || cantMenores == 10)
+                            if (cantMenores >= 5 && cantMayores == 0)
                             {
                                 Console.ForegroundColor = ConsoleColor.Red;
                                 Console.WriteLine("SE NECESITA UN ADULTO RESPONSABLE");
-                                cantPer10y15 = 0;
-                                cantPersonas = 0;
+                                cantMenores = 0;
+                                cantMayores = 0;
                             }
                             else
                             {
-                                Console.WriteLine("El valor del ticket es de: {0:c}", recaudacionGrupoPasaporte);
-                                Console.WriteLine("Desea confirmar la compra? [s/n]");
+                                Console.WriteLine("\nEl valor del ticket es de: {0:c}", recaudacionGrupoPasaporte);
+                                Console.WriteLine("\nDesea confirmar la compra? [s/n]");
                                 teclaCompra = Console.ReadLine();
                                 while (teclaCompra != "s" && teclaCompra != "S" && teclaCompra != "n" && teclaCompra != "N")
                                 {
@@ -187,14 +185,18 @@ namespace TpN2
                                     case "s":
                                     case "S":
                                         recaudacionPasaporte += recaudacionGrupoPasaporte;
+                                        cantPerPasaporte += grupo;
+                                        acumEdadTotal += acumEdad;
+                                        cantPer10y15Total += cantPer10y15;
+                                        cantGrupos++;
                                         break;
                                     case "n":
                                     case "N":
-                                        cantPersonas -= cantPersonas;
                                         break;
                                 }
 
                             }
+
                         }
                         Console.ForegroundColor = ConsoleColor.White;
                         Console.WriteLine("Presione una tecla para volver al menu principal");
@@ -203,24 +205,32 @@ namespace TpN2
                     case 3:
                         Console.Clear();
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.WriteLine("\t\t\t\t\t\t\tTicket");
+                        Console.WriteLine("\t\t\tTicket");
                         Console.ForegroundColor = ConsoleColor.White;
-                        recaudacionTotal = recaudacionPasaporte + recaudacionTicketTotal;
-                        promedioEdadTotal = (double)acumEdadTotal / cantPersonas;
-                        if (cantPersonas > 0)
+                        cantPersonasTotal = cantPerIndividual + cantPerPasaporte;
+                        if (cantPersonasTotal > 0)
                         {
-                            Console.WriteLine("La cantidad de personas que asisteron es de: {0}", cantPersonas);
-                            Console.WriteLine("La recaudacion del dia es de: {0:c}", recaudacionTotal);
-                            Console.WriteLine("La recaudacion de los pasaportes es de: {0:c}", recaudacionPasaporte);
-                            Console.WriteLine("La recaudacion de tickets individuales es de: {0:c}\n", recaudacionTicketTotal);
-                            Console.WriteLine("Cantidad de personas que entraron con pasaporte: {0}", cantPasaporte);
-                            Console.WriteLine("Cantidad de personas entre 10 y 15 años: {0}", cantPer10y15);
-                            Console.WriteLine("El promedio de edad de todos los asistentes es de: {0:F3}", promedioEdadTotal);
+                            recaudacionTotal = recaudacionPasaporte + recaudacionTicketTotal;
+                            promedioEdadTotal = (double)acumEdadTotal / cantPersonasTotal;
+                            Console.WriteLine("\nLa recaudacion total del dia es de:                {0,12:c}", recaudacionTotal);
+                            Console.WriteLine("La recaudacion de los pasaportes es de:            {0,12:c}", recaudacionPasaporte);
+                            Console.WriteLine("La recaudacion de tickets individuales es de:      {0,12:c}", recaudacionTicketTotal);
+                            Console.WriteLine("\nCantidad de personas que asistieron:                          {0}", cantPersonasTotal);
+                            Console.WriteLine("Cantidad de grupos que asistieron:                            {0}", cantGrupos);
+                            Console.WriteLine("Cantidad de personas entre 10 y 15 años:                      {0}", cantPer10y15Total);
+                            Console.WriteLine("Cantidad de personas que entraron con pasaporte:              {0}", cantPerPasaporte);
+                            Console.WriteLine("El promedio de edad de todos los asistentes es de:       {0:F3}", promedioEdadTotal);
                         }
                         else
                         {
                             Console.WriteLine("No asistio gente");
                         }
+                        break;
+
+                    default:
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("\tOPCION INVALIDA");
+                        Console.Beep(500, 250);
                         break;
                 }
                 Console.ReadKey();
