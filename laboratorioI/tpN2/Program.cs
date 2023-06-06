@@ -30,7 +30,7 @@ namespace TpN2
 
             int edad, grupo, cantGrupos = 0, opcion = -1,
             cantPerIndividual = 0, cantPerPasaporte = 0, cantPersonasTotal, cantPersonas,
-            cantPer10y15, cantPer10y15Total = 0, cantMayores = 0, cantMenores = 0,
+            cantPer10y15, cantPer10y15Total = 0, cantMenores = 0,
             acumEdadTotal = 0, acumEdad, cantMayoresGrupo;
 
             double recaudacionTicket, recaudacionTicketTotal = 0, recaudacionPasaporte = 0, recaudacionGrupoPasaporte, recaudacionTotal,
@@ -164,39 +164,76 @@ namespace TpN2
                                 }
 
                             }
-                            if (cantMenores >= 5 && cantMayoresGrupo < 2)
+                            if (cantMenores > 5)
                             {
-                                Console.ForegroundColor = ConsoleColor.Red;
-                                Console.WriteLine("NO HAY SUFICIENTES ADULTOS RESPONSABLES");
-                                cantMenores = 0;
-
-                            }
-                            else
-                            {
-                                Console.WriteLine("\nEl valor del ticket es de: {0:c}", recaudacionGrupoPasaporte);
-                                Console.WriteLine("\nDesea confirmar la compra? [s/n]");
-                                teclaCompra = Console.ReadLine();
-                                while (teclaCompra != "s" && teclaCompra != "S" && teclaCompra != "n" && teclaCompra != "N")
+                                if (cantMayoresGrupo >= 2)
                                 {
-                                    Console.WriteLine("\nPor favor escriba S/s o N/n");
+                                    Console.WriteLine("\nEl valor del ticket es de: {0:c}", recaudacionGrupoPasaporte);
+                                    Console.WriteLine("\nDesea confirmar la compra? [s/n]");
                                     teclaCompra = Console.ReadLine();
+                                    while (teclaCompra != "s" && teclaCompra != "S" && teclaCompra != "n" && teclaCompra != "N")
+                                    {
+                                        Console.WriteLine("\nPor favor escriba S/s o N/n");
+                                        teclaCompra = Console.ReadLine();
+                                    }
+                                    switch (teclaCompra)
+                                    {
+                                        case "s":
+                                        case "S":
+                                            recaudacionPasaporte += recaudacionGrupoPasaporte;
+                                            cantPerPasaporte += grupo;
+                                            acumEdadTotal += acumEdad;
+                                            cantPer10y15Total += cantPer10y15;
+                                            cantGrupos++;
+                                            break;
+                                        case "n":
+                                        case "N":
+                                            break;
+                                    }
                                 }
-                                switch (teclaCompra)
+                                else
                                 {
-                                    case "s":
-                                    case "S":
-                                        recaudacionPasaporte += recaudacionGrupoPasaporte;
-                                        cantPerPasaporte += grupo;
-                                        acumEdadTotal += acumEdad;
-                                        cantPer10y15Total += cantPer10y15;
-                                        cantGrupos++;
-                                        break;
-                                    case "n":
-                                    case "N":
-                                        break;
+                                    Console.BackgroundColor = ConsoleColor.Red;
+                                    Console.WriteLine("NO HAY SUFICIENTES ADULTOS RESPONSABLES");
+                                    cantMenores = 0;
+                                    cantMayoresGrupo = 0;
                                 }
-
                             }
+                            else if (cantMenores <= 5)
+                            {
+                                if (cantMayoresGrupo >= 1)
+                                {
+                                    Console.WriteLine("\nEl valor del ticket es de: {0:c}", recaudacionGrupoPasaporte);
+                                    Console.WriteLine("\nDesea confirmar la compra? [s/n]");
+                                    teclaCompra = Console.ReadLine();
+                                    while (teclaCompra != "s" && teclaCompra != "S" && teclaCompra != "n" && teclaCompra != "N")
+                                    {
+                                        Console.WriteLine("\nPor favor escriba S/s o N/n");
+                                        teclaCompra = Console.ReadLine();
+                                    }
+                                    switch (teclaCompra)
+                                    {
+                                        case "s":
+                                        case "S":
+                                            recaudacionPasaporte += recaudacionGrupoPasaporte;
+                                            cantPerPasaporte += grupo;
+                                            acumEdadTotal += acumEdad;
+                                            cantPer10y15Total += cantPer10y15;
+                                            cantGrupos++;
+                                            break;
+                                        case "n":
+                                        case "N":
+                                            break;
+                                    }
+                                } else
+                                {                                    
+                                    Console.BackgroundColor = ConsoleColor.Red;
+                                    Console.WriteLine("NO HAY SUFICIENTES ADULTOS RESPONSABLES");
+                                    cantMenores = 0;
+                                    cantMayoresGrupo = 0;
+                                }
+                            }
+                        
 
                         }
                         Console.ForegroundColor = ConsoleColor.Black;
