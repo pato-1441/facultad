@@ -10,6 +10,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("-----SHORT-------");
 
             short[] shortArray = new short[5];
             RandomGenerator.RandomArrayGenerator(shortArray);
@@ -18,7 +19,7 @@ namespace ConsoleApp1
             ClassIntegers.SelectionSort16(shortArray);
             ShowArray(shortArray);
 
-            Console.WriteLine("------------------------------");
+            Console.WriteLine("-----INT64-------");
 
 
             Int64[] intArray = new Int64[5];
@@ -28,7 +29,7 @@ namespace ConsoleApp1
             ClassIntegers.SelectionSort64(intArray);
             ShowArray(intArray);
 
-            Console.WriteLine("------------------------------");
+            Console.WriteLine("----------FLOAT-----------");
 
             float[] floatArray = new float[5];
             RandomGenerator.RandomArrayGenerator(floatArray);
@@ -37,7 +38,7 @@ namespace ConsoleApp1
             ClassDouble.SelectionSortFloat(floatArray);
             ShowArray(floatArray);
 
-            Console.WriteLine("------------------------------");
+            Console.WriteLine("---------DECIMAL-----------");
 
             decimal[] decimalArray = new decimal[5];
             RandomGenerator.RandomArrayGenerator(decimalArray);
@@ -46,7 +47,7 @@ namespace ConsoleApp1
             ClassDouble.SelectionSortDecimal(decimalArray);
             ShowArray(decimalArray);
 
-            Console.WriteLine("------------------------------");
+            Console.WriteLine("----------STRING8----------");
 
             string[] stringArray8 = RandomGenerator.RandomStringsGenerator8(5);
             ShowArray(stringArray8);
@@ -54,7 +55,7 @@ namespace ConsoleApp1
             ClassStrings.SelectionSortStrings(stringArray8);
             ShowArray(stringArray8);
 
-            Console.WriteLine("------------------------------");
+            Console.WriteLine("----------STRING32---------");
 
             string[] stringArray32 = RandomGenerator.RandomStringsGenerator32(5);
             ShowArray(stringArray32);

@@ -8,7 +8,9 @@ namespace ConsoleApp1
 {
     internal class RandomGenerator
     {
-        static Random randomGenerator = new Random();
+        static int seed = 240623;
+        static Random randomGenerator = new Random(seed);
+        
 
         static public void RandomArrayGenerator(short[] array)
         {
@@ -44,7 +46,7 @@ namespace ConsoleApp1
         static public string[] RandomStringsGenerator8(int size)
         {
             string[] randomStrings = new string[size];
-            Random random = new Random();
+            Random random = new Random(seed);
 
             for (int i = 0; i < size; i++)
             {
@@ -58,7 +60,7 @@ namespace ConsoleApp1
         static public string[] RandomStringsGenerator32(int size)
         {
             string[] randomStrings = new string[size];
-            Random random = new Random();
+            Random random = new Random(seed);
 
             for (int i = 0; i < size; i++)
             {
