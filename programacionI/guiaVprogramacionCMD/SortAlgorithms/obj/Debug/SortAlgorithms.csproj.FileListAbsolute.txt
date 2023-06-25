@@ -1,0 +1,11 @@
+E:\Facultad\facultad-git\programacionI\guiaVprogramacionCMD\SortAlgorithms\obj\Debug\SortAlgorithms.csproj.AssemblyReference.cache
+E:\Facultad\facultad-git\programacionI\guiaVprogramacionCMD\SortAlgorithms\obj\Debug\SortAlgorithms.csproj.SuggestedBindingRedirects.cache
+E:\Facultad\facultad-git\programacionI\guiaVprogramacionCMD\SortAlgorithms\obj\Debug\SortAlgorithms.Properties.Resources.resources
+E:\Facultad\facultad-git\programacionI\guiaVprogramacionCMD\SortAlgorithms\obj\Debug\ConsoleApp1.SortAlghoritms.resources
+E:\Facultad\facultad-git\programacionI\guiaVprogramacionCMD\SortAlgorithms\obj\Debug\SortAlgorithms.csproj.GenerateResource.cache
+E:\Facultad\facultad-git\programacionI\guiaVprogramacionCMD\SortAlgorithms\obj\Debug\SortAlgorithms.csproj.CoreCompileInputs.cache
+E:\Facultad\facultad-git\programacionI\guiaVprogramacionCMD\SortAlgorithms\bin\Debug\SortAlgorithms.exe.config
+E:\Facultad\facultad-git\programacionI\guiaVprogramacionCMD\SortAlgorithms\bin\Debug\SortAlgorithms.exe
+E:\Facultad\facultad-git\programacionI\guiaVprogramacionCMD\SortAlgorithms\bin\Debug\SortAlgorithms.pdb
+E:\Facultad\facultad-git\programacionI\guiaVprogramacionCMD\SortAlgorithms\obj\Debug\SortAlgorithms.exe
+E:\Facultad\facultad-git\programacionI\guiaVprogramacionCMD\SortAlgorithms\obj\Debug\SortAlgorithms.pdb

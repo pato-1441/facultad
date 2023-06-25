@@ -1,0 +1,11 @@
+E:\Facultad\facultad-git\programacionI\guiaVprogramacionCMD\FormSortingAlgorithms\bin\Debug\FormSortingAlgorithms.exe.config
+E:\Facultad\facultad-git\programacionI\guiaVprogramacionCMD\FormSortingAlgorithms\bin\Debug\FormSortingAlgorithms.exe
+E:\Facultad\facultad-git\programacionI\guiaVprogramacionCMD\FormSortingAlgorithms\bin\Debug\FormSortingAlgorithms.pdb
+E:\Facultad\facultad-git\programacionI\guiaVprogramacionCMD\FormSortingAlgorithms\obj\Debug\FormSortingAlgorithms.csproj.AssemblyReference.cache
+E:\Facultad\facultad-git\programacionI\guiaVprogramacionCMD\FormSortingAlgorithms\obj\Debug\FormSortingAlgorithms.csproj.SuggestedBindingRedirects.cache
+E:\Facultad\facultad-git\programacionI\guiaVprogramacionCMD\FormSortingAlgorithms\obj\Debug\FormSortingAlgorithms.Properties.Resources.resources
+E:\Facultad\facultad-git\programacionI\guiaVprogramacionCMD\FormSortingAlgorithms\obj\Debug\FormSortingAlgorithms.csproj.GenerateResource.cache
+E:\Facultad\facultad-git\programacionI\guiaVprogramacionCMD\FormSortingAlgorithms\obj\Debug\FormSortingAlgorithms.csproj.CoreCompileInputs.cache
+E:\Facultad\facultad-git\programacionI\guiaVprogramacionCMD\FormSortingAlgorithms\obj\Debug\FormSortingAlgorithms.exe
+E:\Facultad\facultad-git\programacionI\guiaVprogramacionCMD\FormSortingAlgorithms\obj\Debug\FormSortingAlgorithms.pdb
+E:\Facultad\facultad-git\programacionI\guiaVprogramacionCMD\FormSortingAlgorithms\obj\Debug\FormSortingAlgorithms.FormAlgoritmosOrdenamiento.resources
