@@ -1,0 +1,13 @@
+E:\Facultad\programacionI\practica\SistemaDeCalidad\bin\Debug\SistemaDeCalidad.exe.config
+E:\Facultad\programacionI\practica\SistemaDeCalidad\bin\Debug\SistemaDeCalidad.exe
+E:\Facultad\programacionI\practica\SistemaDeCalidad\bin\Debug\SistemaDeCalidad.pdb
+E:\Facultad\programacionI\practica\SistemaDeCalidad\obj\Debug\SistemaDeCalidad.csproj.AssemblyReference.cache
+E:\Facultad\programacionI\practica\SistemaDeCalidad\obj\Debug\SistemaDeCalidad.csproj.SuggestedBindingRedirects.cache
+E:\Facultad\programacionI\practica\SistemaDeCalidad\obj\Debug\SistemaDeCalidad.Form1.resources
+E:\Facultad\programacionI\practica\SistemaDeCalidad\obj\Debug\SistemaDeCalidad.Properties.Resources.resources
+E:\Facultad\programacionI\practica\SistemaDeCalidad\obj\Debug\SistemaDeCalidad.csproj.GenerateResource.cache
+E:\Facultad\programacionI\practica\SistemaDeCalidad\obj\Debug\SistemaDeCalidad.csproj.CoreCompileInputs.cache
+E:\Facultad\programacionI\practica\SistemaDeCalidad\obj\Debug\SistemaDeCalidad.exe
+E:\Facultad\programacionI\practica\SistemaDeCalidad\obj\Debug\SistemaDeCalidad.pdb
+E:\Facultad\programacionI\practica\SistemaDeCalidad\obj\Debug\SistemaDeCalidad.ModalEncuesta.resources
+E:\Facultad\programacionI\practica\SistemaDeCalidad\obj\Debug\SistemaDeCalidad.ModalInstatisfechos.resources
