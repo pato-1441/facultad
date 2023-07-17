@@ -47,11 +47,12 @@
             // 
             // btnFinalizarPrograma
             // 
+            this.btnFinalizarPrograma.DialogResult = System.Windows.Forms.DialogResult.Yes;
             this.btnFinalizarPrograma.Location = new System.Drawing.Point(22, 183);
             this.btnFinalizarPrograma.Name = "btnFinalizarPrograma";
             this.btnFinalizarPrograma.Size = new System.Drawing.Size(183, 54);
             this.btnFinalizarPrograma.TabIndex = 1;
-            this.btnFinalizarPrograma.Text = "Finalizar programa";
+            this.btnFinalizarPrograma.Text = "Consultar multados";
             this.btnFinalizarPrograma.UseVisualStyleBackColor = true;
             this.btnFinalizarPrograma.Click += new System.EventHandler(this.btnFinalizarPrograma_Click);
             // 
@@ -93,6 +94,7 @@
             this.Controls.Add(this.btnFinalizarPrograma);
             this.Controls.Add(this.btnAñadirVehiculos);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sistema Cobro Transporte";
             this.ResumeLayout(false);
             this.PerformLayout();

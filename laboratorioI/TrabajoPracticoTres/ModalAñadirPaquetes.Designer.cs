@@ -168,13 +168,13 @@
             this.rbSi.Name = "rbSi";
             this.rbSi.Size = new System.Drawing.Size(34, 17);
             this.rbSi.TabIndex = 10;
-            this.rbSi.TabStop = true;
             this.rbSi.Text = "Si";
             this.rbSi.UseVisualStyleBackColor = true;
             // 
             // rbNo
             // 
             this.rbNo.AutoSize = true;
+            this.rbNo.Checked = true;
             this.rbNo.Location = new System.Drawing.Point(113, 45);
             this.rbNo.Name = "rbNo";
             this.rbNo.Size = new System.Drawing.Size(39, 17);

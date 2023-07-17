@@ -29,7 +29,8 @@
         private void InitializeComponent()
         {
             this.lbVehiculosMultados = new System.Windows.Forms.ListBox();
-            this.btnConsultarDatos = new System.Windows.Forms.Button();
+            this.btnCerrar = new System.Windows.Forms.Button();
+            this.btnConsultar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbVehiculosMultados
@@ -37,33 +38,47 @@
             this.lbVehiculosMultados.FormattingEnabled = true;
             this.lbVehiculosMultados.Location = new System.Drawing.Point(12, 9);
             this.lbVehiculosMultados.Name = "lbVehiculosMultados";
-            this.lbVehiculosMultados.Size = new System.Drawing.Size(143, 303);
+            this.lbVehiculosMultados.Size = new System.Drawing.Size(283, 212);
             this.lbVehiculosMultados.TabIndex = 0;
             // 
-            // btnConsultarDatos
+            // btnCerrar
             // 
-            this.btnConsultarDatos.Location = new System.Drawing.Point(161, 9);
-            this.btnConsultarDatos.Name = "btnConsultarDatos";
-            this.btnConsultarDatos.Size = new System.Drawing.Size(138, 43);
-            this.btnConsultarDatos.TabIndex = 1;
-            this.btnConsultarDatos.Text = "Consultar Datos";
-            this.btnConsultarDatos.UseVisualStyleBackColor = true;
+            this.btnCerrar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnCerrar.Location = new System.Drawing.Point(12, 227);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(137, 35);
+            this.btnCerrar.TabIndex = 1;
+            this.btnCerrar.Text = "Cerrar";
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            // 
+            // btnConsultar
+            // 
+            this.btnConsultar.DialogResult = System.Windows.Forms.DialogResult.Yes;
+            this.btnConsultar.Location = new System.Drawing.Point(158, 227);
+            this.btnConsultar.Name = "btnConsultar";
+            this.btnConsultar.Size = new System.Drawing.Size(137, 35);
+            this.btnConsultar.TabIndex = 2;
+            this.btnConsultar.Text = "Consultar datos";
+            this.btnConsultar.UseVisualStyleBackColor = true;
             // 
             // ModalFinalizar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(307, 324);
-            this.Controls.Add(this.btnConsultarDatos);
+            this.ClientSize = new System.Drawing.Size(307, 274);
+            this.Controls.Add(this.btnConsultar);
+            this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.lbVehiculosMultados);
             this.Name = "ModalFinalizar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Vehiculos multados";
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Button btnConsultarDatos;
         public System.Windows.Forms.ListBox lbVehiculosMultados;
+        public System.Windows.Forms.Button btnCerrar;
+        public System.Windows.Forms.Button btnConsultar;
     }
 }

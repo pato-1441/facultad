@@ -80,13 +80,13 @@
             this.rbCamion.Name = "rbCamion";
             this.rbCamion.Size = new System.Drawing.Size(60, 17);
             this.rbCamion.TabIndex = 4;
-            this.rbCamion.TabStop = true;
             this.rbCamion.Text = "Camion";
             this.rbCamion.UseVisualStyleBackColor = true;
             // 
             // rbFurgon
             // 
             this.rbFurgon.AutoSize = true;
+            this.rbFurgon.Checked = true;
             this.rbFurgon.Location = new System.Drawing.Point(21, 48);
             this.rbFurgon.Name = "rbFurgon";
             this.rbFurgon.Size = new System.Drawing.Size(58, 17);

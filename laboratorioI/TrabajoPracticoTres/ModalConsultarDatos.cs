@@ -4,16 +4,15 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TrabajoPracticoTres
 {
-    public partial class ModalFinalizar : Form
+    public partial class ModalConsultarDatos : Form
     {
-        public ModalFinalizar()
+        public ModalConsultarDatos()
         {
             InitializeComponent();
         }

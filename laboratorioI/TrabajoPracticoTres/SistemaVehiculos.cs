@@ -50,6 +50,22 @@ namespace TrabajoPracticoTres
                 }
             }
         }
+
+        public int BuscarVehiculo(Vehiculo[] vehiculos, int patente)
+        {
+            int longitud = vehiculos.Length;
+            int posicion = -1;
+            int contador = 0;
+            while (contador < longitud && posicion == -1)
+            {
+                if (vehiculos[contador].Patente == patente)
+                {
+                    posicion = contador;
+                }
+                contador++;
+            }
+            return posicion;
+        }
         public void AñadirVehiculo(int patente, int tipoVehiculo, int capacidad) 
         {
             Vehiculo vehiculo = new Vehiculo(patente, tipoVehiculo, capacidad);

@@ -12,3 +12,4 @@ E:\Facultad\facultad-git\laboratorioI\TrabajoPracticoTres\obj\Debug\TrabajoPract
 E:\Facultad\facultad-git\laboratorioI\TrabajoPracticoTres\obj\Debug\TrabajoPracticoTres.ModalAñadirVehiculo.resources
 E:\Facultad\facultad-git\laboratorioI\TrabajoPracticoTres\obj\Debug\TrabajoPracticoTres.ModalFinalizar.resources
 E:\Facultad\facultad-git\laboratorioI\TrabajoPracticoTres\obj\Debug\TrabajoPracticoTres.ModalGenerarCobro.resources
+E:\Facultad\facultad-git\laboratorioI\TrabajoPracticoTres\obj\Debug\TrabajoPracticoTres.ModalConsultarDatos.resources
