@@ -21,49 +21,16 @@ namespace TrabajoPracticoTres
         private void btnAñadirVehiculo_Click(object sender, EventArgs e)
         {
             ModalAñadirVehiculo modal = new ModalAñadirVehiculo();
-            while (modal.ShowDialog() == DialogResult.OK)
+            if (modal.ShowDialog() == DialogResult.OK)
             {
                 if (modal.rbFurgon.Checked == true)
+                {                    
+                    sistema.AñadirVehiculo(Convert.ToInt32(modal.tbPatente.Text), 1, Convert.ToInt32(modal.tbCapacidadVehiculo.Text));
+                    lbVehiculos.Items.Add(modal.tbPatente.Text);
+                } else
                 {
-                    if (modal.rbSi.Checked == true)
-                    {
-                        Vehiculo vehiculo = new Vehiculo(Convert.ToInt32(modal.tbPatente.Text), 1, Convert.ToInt32(modal.tbCapacidadVehiculo.Text),
-                                                        Convert.ToInt32(modal.tbPaquetesTipoA.Text), Convert.ToInt32(modal.tbPaquetesTipoB.Text),
-                                                        Convert.ToInt32(modal.tbPaquetesTipoC.Text), Convert.ToInt32(modal.nudHoraPartida.Value),
-                                                        0, Convert.ToInt32(modal.nudDia.Value), Convert.ToInt32(modal.nudMes.Value),
-                                                        Convert.ToInt32(modal.nudAño.Value), true);
-                        sistema.GenerarCobro(vehiculo);
-                    }
-                    else if (modal.rbSi.Checked == false)
-                    {
-                        Vehiculo vehiculo = new Vehiculo(Convert.ToInt32(modal.tbPatente.Text), 1, Convert.ToInt32(modal.tbCapacidadVehiculo.Text),
-                                                        Convert.ToInt32(modal.tbPaquetesTipoA.Text), Convert.ToInt32(modal.tbPaquetesTipoB.Text),
-                                                        Convert.ToInt32(modal.tbPaquetesTipoC.Text), Convert.ToInt32(modal.nudHoraPartida.Value),
-                                                        0, Convert.ToInt32(modal.nudDia.Value), Convert.ToInt32(modal.nudMes.Value),
-                                                        Convert.ToInt32(modal.nudAño.Value), false);
-                        sistema.GenerarCobro(vehiculo);
-                    }
-                }
-                else if (modal.rbCamion.Checked == true)
-                {
-                    if (modal.rbSi.Checked == true)
-                    {
-                        Vehiculo vehiculo = new Vehiculo(Convert.ToInt32(modal.tbPatente.Text), 2, Convert.ToInt32(modal.tbCapacidadVehiculo.Text),
-                                                        Convert.ToInt32(modal.tbPaquetesTipoA.Text), Convert.ToInt32(modal.tbPaquetesTipoB.Text),
-                                                        Convert.ToInt32(modal.tbPaquetesTipoC.Text), Convert.ToInt32(modal.nudHoraPartida.Value),
-                                                        0, Convert.ToInt32(modal.nudDia.Value), Convert.ToInt32(modal.nudMes.Value),
-                                                        Convert.ToInt32(modal.nudAño.Value), true);
-                        sistema.GenerarCobro(vehiculo);
-                    }
-                    else if (modal.rbSi.Checked == false)
-                    {
-                        Vehiculo vehiculo = new Vehiculo(Convert.ToInt32(modal.tbPatente.Text), 2, Convert.ToInt32(modal.tbCapacidadVehiculo.Text),
-                                                        Convert.ToInt32(modal.tbPaquetesTipoA.Text), Convert.ToInt32(modal.tbPaquetesTipoB.Text),
-                                                        Convert.ToInt32(modal.tbPaquetesTipoC.Text), Convert.ToInt32(modal.nudHoraPartida.Value),
-                                                        0, Convert.ToInt32(modal.nudDia.Value), Convert.ToInt32(modal.nudMes.Value),
-                                                        Convert.ToInt32(modal.nudAño.Value), false);
-                        sistema.GenerarCobro(vehiculo);
-                    }
+                    sistema.AñadirVehiculo(Convert.ToInt32(modal.tbPatente.Text), 2, Convert.ToInt32(modal.tbCapacidadVehiculo.Text));
+                    lbVehiculos.Items.Add(modal.tbPatente.Text);
                 }
             }
             modal.Dispose();
@@ -83,6 +50,38 @@ namespace TrabajoPracticoTres
                 modal.lbVehiculosMultados.Items.Add(patentesMultadas[i].ToString());
             }
             modal.ShowDialog();
+        }
+
+        private void btnGenerarCobro_Click(object sender, EventArgs e)
+        { 
+            ModalGenerarCobro modal = new ModalGenerarCobro();
+            if (modal.ShowDialog() == DialogResult.OK)
+            {
+                int seleccionado = lbVehiculos.SelectedIndex;
+                sistema.AñadirPaquetes(Convert.ToInt32(lbVehiculos.SelectedIndex),
+                                       Convert.ToInt32(modal.tbPaquetesA.Text),
+                                       Convert.ToInt32(modal.tbPaquetesB.Text),
+                                       Convert.ToInt32(modal.tbPaquetesC.Text));
+                if (modal.rbSi.Checked)
+                {
+                    sistema.AñadirFechaPartida(Convert.ToInt32(lbVehiculos.SelectedIndex),
+                                               Convert.ToInt32(modal.nudHoraPartida.Value),
+                                               true,
+                                               Convert.ToInt32(modal.nudDia.Value),
+                                               Convert.ToInt32(modal.nudMes.Value),
+                                               Convert.ToInt32(modal.nudAño.Value));
+                } else
+                {
+                    sistema.AñadirFechaPartida(Convert.ToInt32(lbVehiculos.SelectedIndex),
+                                               Convert.ToInt32(modal.nudHoraPartida.Value),
+                                               false,
+                                               Convert.ToInt32(modal.nudDia.Value),
+                                               Convert.ToInt32(modal.nudMes.Value),
+                                               Convert.ToInt32(modal.nudAño.Value));
+                }
+                sistema.GenerarCobro(sistema.Vehiculos[seleccionado]);
+
+            }
         }
     }
 }

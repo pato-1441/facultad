@@ -29,20 +29,20 @@ namespace TrabajoPracticoTres
 
         public int CantPaqTipoA
         {
-            get { return  cantPaqTipoA; }
+            get { return  cantPaqTipoA; } set { cantPaqTipoA = value; }
         }
         public int CantPaqTipoB
         {
-            get { return cantPaqTipoB; }
+            get { return cantPaqTipoB; } set { cantPaqTipoB = value; }
         }
         public int CantPaqTipoC
         {
-            get { return cantPaqTipoC; }
+            get { return cantPaqTipoC; } set { cantPaqTipoC = value; }
         }
 
         public int HoraPartida
         {
-            get { return horaPartida; }
+            get { return horaPartida; } set { horaPartida = value; }
         }
 
         public int TotalKilogramos
@@ -57,38 +57,38 @@ namespace TrabajoPracticoTres
 
         public int Dia
         {
-            get { return dia; }
+            get { return dia; } set { dia = value; }
         }
         public int Mes
         {
-            get { return mes; }
+            get { return mes; } set { mes = value; }
         }
         public int Año
         {
-            get { return año; }
+            get { return año; } set { año = value; }
         }
 
         public bool DomingoOFeriado
         {
-            get { return domingoOFeriado;}
+            get { return domingoOFeriado; } set {  domingoOFeriado = value;}
         }
 
-        public Vehiculo(int patente, int tipoVehiculo, int capacidadCarga, int cantPaqTipoA,
-                        int cantPaqTipoB, int cantPaqTipoC, int horaPartida, double abonado,
-                        int dia, int mes, int año, bool domingoOFeriado)
+        public Vehiculo(int patente, int tipoVehiculo, int capacidadCarga)
         {
             this.patente  = patente;
             this.tipoVehiculo = tipoVehiculo;
             this.capacidadCarga = capacidadCarga;
-            this.cantPaqTipoA = cantPaqTipoA;
-            this.cantPaqTipoB = cantPaqTipoB;
-            this.cantPaqTipoC = cantPaqTipoC;
+            this.cantPaqTipoA = 0;
+            this.cantPaqTipoB = 0;
+            this.cantPaqTipoC = 0;
+            /*
             this.horaPartida = horaPartida;
             this.abonado = abonado;
             this.dia = dia;
             this.mes = mes;
             this.año = año;
             this.domingoOFeriado= domingoOFeriado;
+            */
         }
         public void GuardarCobro(double total)
         {

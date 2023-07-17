@@ -52,6 +52,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModalAñadirPaquetes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModalAñadirPaquetes.Designer.cs">
+      <DependentUpon>ModalAñadirPaquetes.cs</DependentUpon>
+    </Compile>
     <Compile Include="ModalAñadirVehiculo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +76,9 @@
     <Compile Include="Vehiculo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModalAñadirPaquetes.resx">
+      <DependentUpon>ModalAñadirPaquetes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ModalAñadirVehiculo.resx">
       <DependentUpon>ModalAñadirVehiculo.cs</DependentUpon>

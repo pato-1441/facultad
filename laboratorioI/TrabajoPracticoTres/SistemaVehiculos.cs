@@ -50,6 +50,28 @@ namespace TrabajoPracticoTres
                 }
             }
         }
+        public void AñadirVehiculo(int patente, int tipoVehiculo, int capacidad) 
+        {
+            Vehiculo vehiculo = new Vehiculo(patente, tipoVehiculo, capacidad);
+            vehiculos[cantVehiculos] = vehiculo;
+            cantVehiculos++;
+        }
+        public void AñadirPaquetes(int indice, int cantPaqA, int cantPaqB, int cantPaqC)
+        {
+            vehiculos[indice].CantPaqTipoA = cantPaqA;
+            vehiculos[indice].CantPaqTipoB = cantPaqB;
+            vehiculos[indice].CantPaqTipoC = cantPaqC;
+        }
+
+        public void AñadirFechaPartida(int indice, int horaPartida, bool domingoOFeriado,
+                                       int dia, int mes, int año)
+        {
+            vehiculos[indice].HoraPartida = horaPartida;
+            vehiculos[indice].DomingoOFeriado = domingoOFeriado;
+            vehiculos[indice].Dia = dia;
+            vehiculos[indice].Mes = mes;
+            vehiculos[indice].Año = año;
+        }
         public double GenerarCobro(Vehiculo vehiculo)
         {
             double total = 0;
@@ -88,8 +110,6 @@ namespace TrabajoPracticoTres
             if (vehiculo.DomingoOFeriado == true)
                 total += 3500;
 
-            vehiculos[cantVehiculos] = vehiculo;
-            cantVehiculos++;
             vehiculo.GuardarCobro(total);
             return total;
         }
