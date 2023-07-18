@@ -36,6 +36,31 @@ namespace TrabajoPracticoTresDos
                     MessageBox.Show("Máximo de competidores alcanzado.");
                 }
             }
+            if (contadorCompetidores == 10)
+            {
+                MessageBox.Show("Cantidad de competidores menores: " + torneo.CantMenores.ToString()+", "+
+                                "Cantidad de competidores mayores: " + torneo.CantMayores.ToString());
+            }
+        }
+
+        private void btnComenzarTorneo_Click(object sender, EventArgs e)
+        {
+            Random random = new Random();
+            int rondas = random.Next(5, 10);
+            ModalTorneo modal = new ModalTorneo();
+            for (int i = 0; i < rondas; i++)
+            {
+                modal.lRonda.Text = "Ronda N° " + (i+1);
+                modal.tbNombreCompetidor.Text = torneo.Competidores[i].Nombre;
+                for(int j = 0; j < 5; j++)
+                {
+                    modal.lNumeroTiro.Text = "Tiro N° " + (j+1);
+                    if (modal.ShowDialog() == DialogResult.OK)
+                    {
+                        torneo.SumarPuntaje(i,Convert.ToInt32(modal.nudPuntaje.Value));
+                    }
+                }
+            }
         }
     }
 }

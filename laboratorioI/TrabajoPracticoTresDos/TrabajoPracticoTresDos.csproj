@@ -59,6 +59,12 @@
     <Compile Include="ModalCargarCompetidor.Designer.cs">
       <DependentUpon>ModalCargarCompetidor.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModalTorneo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModalTorneo.Designer.cs">
+      <DependentUpon>ModalTorneo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Torneo.cs" />
@@ -68,6 +74,9 @@
     <EmbeddedResource Include="ModalCargarCompetidor.resx">
       <DependentUpon>ModalCargarCompetidor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ModalTorneo.resx">
+      <DependentUpon>ModalTorneo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -76,6 +85,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -89,6 +99,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="puntajes.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
