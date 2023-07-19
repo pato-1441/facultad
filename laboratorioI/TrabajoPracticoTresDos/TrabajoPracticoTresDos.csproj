@@ -59,6 +59,12 @@
     <Compile Include="ModalCargarCompetidor.Designer.cs">
       <DependentUpon>ModalCargarCompetidor.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModalGanadorRonda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModalGanadorRonda.Designer.cs">
+      <DependentUpon>ModalGanadorRonda.cs</DependentUpon>
+    </Compile>
     <Compile Include="ModalTorneo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ModalCargarCompetidor.resx">
       <DependentUpon>ModalCargarCompetidor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModalGanadorRonda.resx">
+      <DependentUpon>ModalGanadorRonda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ModalTorneo.resx">
       <DependentUpon>ModalTorneo.cs</DependentUpon>

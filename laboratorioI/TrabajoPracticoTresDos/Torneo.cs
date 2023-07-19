@@ -48,9 +48,19 @@ namespace TrabajoPracticoTresDos
                 cantCompetidores++;
             }
         }
-        public void SumarPuntaje(int indiceCompetidor,int puntajeRealizado)
+
+        public int ObtenerGanadorRonda()
         {
-            competidores[indiceCompetidor].Puntaje += puntajeRealizado;
+            int indiceGanador = 0;
+            int mayor = -1;
+            for(int i = 0; i < cantCompetidores; i++)
+            {
+                if (competidores[i].ObtenerPuntajeTotal() > mayor)
+                {
+                    indiceGanador = i;
+                }
+            }
+            return indiceGanador;
         }
     }
 }

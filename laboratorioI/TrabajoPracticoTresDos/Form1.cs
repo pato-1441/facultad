@@ -46,20 +46,31 @@ namespace TrabajoPracticoTresDos
         private void btnComenzarTorneo_Click(object sender, EventArgs e)
         {
             Random random = new Random();
-            int rondas = random.Next(5, 10);
+            //int rondas = random.Next(5, 10);
+            int rondas = 1;
             ModalTorneo modal = new ModalTorneo();
             for (int i = 0; i < rondas; i++)
             {
                 modal.lRonda.Text = "Ronda N° " + (i+1);
-                modal.tbNombreCompetidor.Text = torneo.Competidores[i].Nombre;
-                for(int j = 0; j < 5; j++)
+                for(int j = 0; j < torneo.CantCompetidores; j++)
                 {
-                    modal.lNumeroTiro.Text = "Tiro N° " + (j+1);
-                    if (modal.ShowDialog() == DialogResult.OK)
+                    modal.tbNombreCompetidor.Text = torneo.Competidores[j].Nombre;
+                    for(int k = 0; k < 5; k++)
                     {
-                        torneo.SumarPuntaje(i,Convert.ToInt32(modal.nudPuntaje.Value));
+                        modal.lNumeroTiro.Text = "Tiro N° " + (k+1);
+                        if (modal.ShowDialog() == DialogResult.OK)
+                        {
+                            torneo.Competidores[j].SumarPuntaje(Convert.ToInt32(modal.nudPuntaje.Value));
+                            //torneo.SumarPuntaje(i,Convert.ToInt32(modal.nudPuntaje.Value));
+                        }
                     }
                 }
+                ModalGanadorRonda modalRonda = new ModalGanadorRonda();
+                modalRonda.gbRonda.Text = "Resultados Ronda N° " + (i + 1);
+                int indiceGanador = torneo.ObtenerGanadorRonda();
+                modalRonda.lNombre1ro.Text = torneo.Competidores[indiceGanador].Nombre;
+                modalRonda.lNombre2do.Text = "";
+                modalRonda.lNombre3ero.Text = "";
             }
         }
     }

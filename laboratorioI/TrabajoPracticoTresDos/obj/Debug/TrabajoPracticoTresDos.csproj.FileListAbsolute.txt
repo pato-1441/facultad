@@ -11,3 +11,4 @@ E:\Facultad\facultad-git\laboratorioI\TrabajoPracticoTresDos\obj\Debug\TrabajoPr
 E:\Facultad\facultad-git\laboratorioI\TrabajoPracticoTresDos\obj\Debug\TrabajoPracticoTresDos.exe
 E:\Facultad\facultad-git\laboratorioI\TrabajoPracticoTresDos\obj\Debug\TrabajoPracticoTresDos.pdb
 E:\Facultad\facultad-git\laboratorioI\TrabajoPracticoTresDos\obj\Debug\TrabajoPracticoTresDos.ModalTorneo.resources
+E:\Facultad\facultad-git\laboratorioI\TrabajoPracticoTresDos\obj\Debug\TrabajoPracticoTresDos.ModalGanadorRonda.resources
