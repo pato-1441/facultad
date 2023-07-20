@@ -31,6 +31,8 @@
             this.btnCargarCompetidor = new System.Windows.Forms.Button();
             this.lbCompetidores = new System.Windows.Forms.ListBox();
             this.btnComenzarTorneo = new System.Windows.Forms.Button();
+            this.btnVerResultados = new System.Windows.Forms.Button();
+            this.btnCerrar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCargarCompetidor
@@ -61,11 +63,33 @@
             this.btnComenzarTorneo.UseVisualStyleBackColor = true;
             this.btnComenzarTorneo.Click += new System.EventHandler(this.btnComenzarTorneo_Click);
             // 
+            // btnVerResultados
+            // 
+            this.btnVerResultados.Location = new System.Drawing.Point(12, 122);
+            this.btnVerResultados.Name = "btnVerResultados";
+            this.btnVerResultados.Size = new System.Drawing.Size(114, 49);
+            this.btnVerResultados.TabIndex = 3;
+            this.btnVerResultados.Text = "Ver resultados";
+            this.btnVerResultados.UseVisualStyleBackColor = true;
+            this.btnVerResultados.Click += new System.EventHandler(this.btnVerResultados_Click);
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Location = new System.Drawing.Point(12, 178);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(114, 46);
+            this.btnCerrar.TabIndex = 4;
+            this.btnCerrar.Text = "Cerrar";
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(293, 239);
+            this.Controls.Add(this.btnCerrar);
+            this.Controls.Add(this.btnVerResultados);
             this.Controls.Add(this.btnComenzarTorneo);
             this.Controls.Add(this.lbCompetidores);
             this.Controls.Add(this.btnCargarCompetidor);
@@ -81,6 +105,8 @@
         private System.Windows.Forms.Button btnCargarCompetidor;
         public System.Windows.Forms.ListBox lbCompetidores;
         private System.Windows.Forms.Button btnComenzarTorneo;
+        private System.Windows.Forms.Button btnVerResultados;
+        private System.Windows.Forms.Button btnCerrar;
     }
 }
 

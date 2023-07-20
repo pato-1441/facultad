@@ -16,7 +16,9 @@ namespace TrabajoPracticoTresDos
         {
             InitializeComponent();
         }
+        
         Torneo torneo = new Torneo(10);
+
         private int contadorCompetidores = 0;
         private void btnCargarCompetidor_Click(object sender, EventArgs e)
         {
@@ -38,40 +40,102 @@ namespace TrabajoPracticoTresDos
             }
             if (contadorCompetidores == 10)
             {
-                MessageBox.Show("Cantidad de competidores menores: " + torneo.CantMenores.ToString()+", "+
+                MessageBox.Show("Cantidad de competidores menores: " + torneo.CantMenores.ToString() + ", " +
                                 "Cantidad de competidores mayores: " + torneo.CantMayores.ToString());
             }
         }
 
         private void btnComenzarTorneo_Click(object sender, EventArgs e)
         {
-            Random random = new Random();
-            //int rondas = random.Next(5, 10);
-            int rondas = 1;
             ModalTorneo modal = new ModalTorneo();
-            for (int i = 0; i < rondas; i++)
+            if (torneo.CantCompetidores >= 3)
             {
-                modal.lRonda.Text = "Ronda N° " + (i+1);
-                for(int j = 0; j < torneo.CantCompetidores; j++)
+                for (int i = 0; i < torneo.CantRondas; i++)
                 {
-                    modal.tbNombreCompetidor.Text = torneo.Competidores[j].Nombre;
-                    for(int k = 0; k < 5; k++)
+                    modal.lRonda.Text = "Ronda N° " + (i + 1);
+                    for (int j = 0; j < torneo.CantCompetidores; j++)
                     {
-                        modal.lNumeroTiro.Text = "Tiro N° " + (k+1);
-                        if (modal.ShowDialog() == DialogResult.OK)
+                        modal.tbNombreCompetidor.Text = torneo.Competidores[j].Nombre;
+                        for (int k = 0; k < 5; k++)
                         {
-                            torneo.Competidores[j].SumarPuntaje(Convert.ToInt32(modal.nudPuntaje.Value));
-                            //torneo.SumarPuntaje(i,Convert.ToInt32(modal.nudPuntaje.Value));
+                            modal.lNumeroTiro.Text = "Tiro N° " + (k + 1);
+                            if (modal.ShowDialog() == DialogResult.OK)
+                            {
+                                if (modal.cbCentro.Checked)
+                                {
+                                    torneo.Competidores[j].SumarPuntaje(10, true);
+                                }
+                                else
+                                {
+                                    torneo.Competidores[j].SumarPuntaje(Convert.ToInt32(modal.nudPuntaje.Value));
+                                }
+                            }
                         }
                     }
+                    ModalGanadorRonda modalRonda = new ModalGanadorRonda();
+                    modalRonda.gbRonda.Text = "Resultados Ronda N° " + (i + 1);
+                    torneo.OrdenarCompetidores();
+                    modalRonda.lNombre1ro.Text = torneo.Competidores[0].Nombre;
+                    modalRonda.lPuntaje1ro.Text = torneo.Competidores[0].ObtenerPuntajeTotal().ToString();
+                    modalRonda.lCantCentros1ro.Text = torneo.Competidores[0].CantX.ToString();
+
+                    modalRonda.lNombre2do.Text = torneo.Competidores[1].Nombre;
+                    modalRonda.lPuntaje2do.Text = torneo.Competidores[1].ObtenerPuntajeTotal().ToString();
+                    modalRonda.lCantCentros2do.Text = torneo.Competidores[1].CantX.ToString();
+
+                    modalRonda.lNombre3ero.Text = torneo.Competidores[2].Nombre;
+                    modalRonda.lPuntaje3ro.Text = torneo.Competidores[2].ObtenerPuntajeTotal().ToString();
+                    modalRonda.lCantCentros3ro.Text = torneo.Competidores[2].CantX.ToString();
+                    modalRonda.ShowDialog();
                 }
-                ModalGanadorRonda modalRonda = new ModalGanadorRonda();
-                modalRonda.gbRonda.Text = "Resultados Ronda N° " + (i + 1);
-                int indiceGanador = torneo.ObtenerGanadorRonda();
-                modalRonda.lNombre1ro.Text = torneo.Competidores[indiceGanador].Nombre;
-                modalRonda.lNombre2do.Text = "";
-                modalRonda.lNombre3ero.Text = "";
             }
+            else
+            {
+                MessageBox.Show("Minimo 3 competidores.");
+            }
+            lbCompetidores.Items.Clear();
+            for(int i = 0; i< torneo.CantCompetidores; i++)
+            {
+                lbCompetidores.Items.Add(torneo.Competidores[i].Nombre);
+            }
+            modal.Dispose();
+        }
+
+        private void btnVerResultados_Click(object sender, EventArgs e)
+        {
+            int indice = lbCompetidores.SelectedIndex;
+            int acumuladorRonda;
+            string fila;
+            ModalResultados modal = new ModalResultados();
+            if (indice != -1)
+            {
+                modal.lCompetidorNombre.Text = torneo.Competidores[indice].Nombre;                
+                acumuladorRonda = 0;
+                fila = "";
+                for (int i = 0; i < torneo.Competidores[indice].CantTiros; i++)
+                {
+                    fila += torneo.Competidores[indice].Puntaje[i].ToString("00") + " ";
+                    acumuladorRonda += torneo.Competidores[indice].Puntaje[i];
+                    if ((i+1) % 5 == 0 && i > 0)
+                    {
+                        modal.lbResultados.Items.Add(fila + " " + acumuladorRonda.ToString("00"));
+                        acumuladorRonda = 0;
+                        fila = "";
+                    }
+                }
+                modal.lbResultados.Items.Add("Total: " + torneo.Competidores[indice].ObtenerPuntajeTotal().ToString());
+                modal.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un competidor.");
+            }
+            modal.Dispose();
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

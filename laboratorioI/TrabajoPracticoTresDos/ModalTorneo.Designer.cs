@@ -136,6 +136,7 @@
             this.cbCentro.TabIndex = 9;
             this.cbCentro.Text = "Si";
             this.cbCentro.UseVisualStyleBackColor = true;
+            this.cbCentro.CheckedChanged += new System.EventHandler(this.cbCentro_CheckedChanged);
             // 
             // ModalTorneo
             // 

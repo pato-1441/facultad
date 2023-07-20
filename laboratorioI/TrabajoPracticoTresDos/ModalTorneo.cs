@@ -16,5 +16,18 @@ namespace TrabajoPracticoTresDos
         {
             InitializeComponent();
         }
+
+        private void cbCentro_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbCentro.Checked)
+            {
+                nudPuntaje.Value = 10;
+                nudPuntaje.Enabled = false;
+            } else
+            {
+                nudPuntaje.Value = 0;
+                nudPuntaje.Enabled = true;
+            }
+        }
     }
 }

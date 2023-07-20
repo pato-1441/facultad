@@ -9,9 +9,8 @@ namespace TrabajoPracticoTresDos
     internal class Competidor
     {
         private string nombre, club;
-        private int edad;
+        private int edad, cantTiros = 0, cantX = 0;
         private int[] puntaje;
-        private int cantTiros=0;
 
         public string Nombre
         {
@@ -32,13 +31,21 @@ namespace TrabajoPracticoTresDos
         {
             get { return puntaje; }
         }
+        public int CantTiros
+        {
+            get { return cantTiros; }
+        }
+        public int CantX 
+        { 
+            get { return cantX; }
+        }
 
         public Competidor(string nombre, int edad, string club)
         {
             this.nombre = nombre;
             this.edad = edad;
             this.club = club;
-            this.puntaje = new int[5];
+            this.puntaje = new int[50];
         }
 
         public void SumarPuntaje(int puntos)
@@ -47,12 +54,19 @@ namespace TrabajoPracticoTresDos
             cantTiros++;
         }
 
+        public void SumarPuntaje(int puntos, bool X)
+        {
+            puntaje[cantTiros] = puntos;
+            cantTiros++;
+            cantX++;
+        }
+
         public int ObtenerPuntajeTotal()
         {
             int total = 0;
-            for(int i = 0; i < cantTiros-1; i++)
+            for(int i = 0; i < cantTiros; i++)
             {
-                total += puntaje[cantTiros];
+                total += puntaje[i];
             }
             return total;
         }
