@@ -1,0 +1,8 @@
+E:\Facultad\facultad-git\programacionI\PracticaFinal\bin\Debug\PracticaFinal.exe.config
+E:\Facultad\facultad-git\programacionI\PracticaFinal\bin\Debug\PracticaFinal.exe
+E:\Facultad\facultad-git\programacionI\PracticaFinal\bin\Debug\PracticaFinal.pdb
+E:\Facultad\facultad-git\programacionI\PracticaFinal\obj\Debug\PracticaFinal.csproj.AssemblyReference.cache
+E:\Facultad\facultad-git\programacionI\PracticaFinal\obj\Debug\PracticaFinal.csproj.SuggestedBindingRedirects.cache
+E:\Facultad\facultad-git\programacionI\PracticaFinal\obj\Debug\PracticaFinal.csproj.CoreCompileInputs.cache
+E:\Facultad\facultad-git\programacionI\PracticaFinal\obj\Debug\PracticaFinal.exe
+E:\Facultad\facultad-git\programacionI\PracticaFinal\obj\Debug\PracticaFinal.pdb
