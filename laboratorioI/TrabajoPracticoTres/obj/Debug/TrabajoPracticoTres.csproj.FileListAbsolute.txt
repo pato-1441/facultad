@@ -1,0 +1,15 @@
+E:\TPS\TrabajoPracticoTres\bin\Debug\TrabajoPracticoTres.exe.config
+E:\TPS\TrabajoPracticoTres\bin\Debug\TrabajoPracticoTres.exe
+E:\TPS\TrabajoPracticoTres\bin\Debug\TrabajoPracticoTres.pdb
+E:\TPS\TrabajoPracticoTres\obj\Debug\TrabajoPracticoTres.csproj.AssemblyReference.cache
+E:\TPS\TrabajoPracticoTres\obj\Debug\TrabajoPracticoTres.csproj.SuggestedBindingRedirects.cache
+E:\TPS\TrabajoPracticoTres\obj\Debug\TrabajoPracticoTres.Form1.resources
+E:\TPS\TrabajoPracticoTres\obj\Debug\TrabajoPracticoTres.ModalGenerarCobro.resources
+E:\TPS\TrabajoPracticoTres\obj\Debug\TrabajoPracticoTres.ModalAñadirVehiculo.resources
+E:\TPS\TrabajoPracticoTres\obj\Debug\TrabajoPracticoTres.ModalConsultarDatos.resources
+E:\TPS\TrabajoPracticoTres\obj\Debug\TrabajoPracticoTres.ModalFinalizar.resources
+E:\TPS\TrabajoPracticoTres\obj\Debug\TrabajoPracticoTres.Properties.Resources.resources
+E:\TPS\TrabajoPracticoTres\obj\Debug\TrabajoPracticoTres.csproj.GenerateResource.cache
+E:\TPS\TrabajoPracticoTres\obj\Debug\TrabajoPracticoTres.csproj.CoreCompileInputs.cache
+E:\TPS\TrabajoPracticoTres\obj\Debug\TrabajoPracticoTres.exe
+E:\TPS\TrabajoPracticoTres\obj\Debug\TrabajoPracticoTres.pdb

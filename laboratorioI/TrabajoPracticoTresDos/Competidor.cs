@@ -61,6 +61,27 @@ namespace TrabajoPracticoTresDos
             cantX++;
         }
 
+        public int[] ObtenerTirosRonda(int ronda) {
+
+            int[] tiros = new int[cantTiros];
+            int inf = (ronda) * 5;
+            int sup = (ronda+1) * 5;                        
+            for(int i = inf,j=0; i < sup; i++,j++){
+                tiros[j] = puntaje[inf];
+			}
+            return tiros;
+		}
+        public int ObtenerTotalRonda(int ronda) {
+
+            int[] puntos = ObtenerTirosRonda(ronda);
+            int total = 0;
+            for(int n = 0; n < 5; n++) 
+            {
+                total += puntos[n];
+            }
+            return total;
+        }
+
         public int ObtenerPuntajeTotal()
         {
             int total = 0;

@@ -104,25 +104,20 @@ namespace TrabajoPracticoTresDos
         private void btnVerResultados_Click(object sender, EventArgs e)
         {
             int indice = lbCompetidores.SelectedIndex;
-            int acumuladorRonda;
             string fila;
             ModalResultados modal = new ModalResultados();
             if (indice != -1)
-            {
-                modal.lCompetidorNombre.Text = torneo.Competidores[indice].Nombre;                
-                acumuladorRonda = 0;
-                fila = "";
-                for (int i = 0; i < torneo.Competidores[indice].CantTiros; i++)
-                {
-                    fila += torneo.Competidores[indice].Puntaje[i].ToString("00") + " ";
-                    acumuladorRonda += torneo.Competidores[indice].Puntaje[i];
-                    if ((i+1) % 5 == 0 && i > 0)
-                    {
-                        modal.lbResultados.Items.Add(fila + " " + acumuladorRonda.ToString("00"));
-                        acumuladorRonda = 0;
-                        fila = "";
+            {                
+                for(int j = 0; j < torneo.CantRondas; j++) {
+                    int[] tiros = torneo.Competidores[indice].ObtenerTirosRonda(j);
+                    fila = "";
+                    for(int i = 0; i < 5; i++) {
+                        fila += tiros[i].ToString("00") + " ";
                     }
+                    fila += torneo.Competidores[indice].ObtenerTotalRonda(j);
+                    modal.lbResultados.Items.Add(fila);
                 }
+                modal.lCompetidorNombre.Text = torneo.Competidores[indice].Nombre; 
                 modal.lbResultados.Items.Add("Total: " + torneo.Competidores[indice].ObtenerPuntajeTotal().ToString());
                 modal.ShowDialog();
             }
