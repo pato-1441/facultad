@@ -1,0 +1,8 @@
+E:\Facultad\facultad-git\programacionII\TestArrayList\bin\Debug\TestArrayList.exe.config
+E:\Facultad\facultad-git\programacionII\TestArrayList\bin\Debug\TestArrayList.exe
+E:\Facultad\facultad-git\programacionII\TestArrayList\bin\Debug\TestArrayList.pdb
+E:\Facultad\facultad-git\programacionII\TestArrayList\obj\Debug\TestArrayList.csproj.AssemblyReference.cache
+E:\Facultad\facultad-git\programacionII\TestArrayList\obj\Debug\TestArrayList.csproj.SuggestedBindingRedirects.cache
+E:\Facultad\facultad-git\programacionII\TestArrayList\obj\Debug\TestArrayList.csproj.CoreCompileInputs.cache
+E:\Facultad\facultad-git\programacionII\TestArrayList\obj\Debug\TestArrayList.exe
+E:\Facultad\facultad-git\programacionII\TestArrayList\obj\Debug\TestArrayList.pdb
