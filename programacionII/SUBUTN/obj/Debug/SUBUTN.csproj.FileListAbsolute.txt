@@ -1,0 +1,12 @@
+E:\One Drive FRSF\OneDrive - UTN - Santa Fe\Escritorio\SUBUTN\SUBUTN\bin\Debug\SUBUTN.exe.config
+E:\One Drive FRSF\OneDrive - UTN - Santa Fe\Escritorio\SUBUTN\SUBUTN\bin\Debug\SUBUTN.exe
+E:\One Drive FRSF\OneDrive - UTN - Santa Fe\Escritorio\SUBUTN\SUBUTN\bin\Debug\SUBUTN.pdb
+E:\One Drive FRSF\OneDrive - UTN - Santa Fe\Escritorio\SUBUTN\SUBUTN\obj\Debug\SUBUTN.csproj.AssemblyReference.cache
+E:\One Drive FRSF\OneDrive - UTN - Santa Fe\Escritorio\SUBUTN\SUBUTN\obj\Debug\SUBUTN.csproj.SuggestedBindingRedirects.cache
+E:\One Drive FRSF\OneDrive - UTN - Santa Fe\Escritorio\SUBUTN\SUBUTN\obj\Debug\SUBUTN.Form1.resources
+E:\One Drive FRSF\OneDrive - UTN - Santa Fe\Escritorio\SUBUTN\SUBUTN\obj\Debug\SUBUTN.Properties.Resources.resources
+E:\One Drive FRSF\OneDrive - UTN - Santa Fe\Escritorio\SUBUTN\SUBUTN\obj\Debug\SUBUTN.RegistroLogueo.resources
+E:\One Drive FRSF\OneDrive - UTN - Santa Fe\Escritorio\SUBUTN\SUBUTN\obj\Debug\SUBUTN.csproj.GenerateResource.cache
+E:\One Drive FRSF\OneDrive - UTN - Santa Fe\Escritorio\SUBUTN\SUBUTN\obj\Debug\SUBUTN.csproj.CoreCompileInputs.cache
+E:\One Drive FRSF\OneDrive - UTN - Santa Fe\Escritorio\SUBUTN\SUBUTN\obj\Debug\SUBUTN.exe
+E:\One Drive FRSF\OneDrive - UTN - Santa Fe\Escritorio\SUBUTN\SUBUTN\obj\Debug\SUBUTN.pdb
