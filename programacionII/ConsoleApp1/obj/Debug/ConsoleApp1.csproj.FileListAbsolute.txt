@@ -1,0 +1,8 @@
+E:\Facultad\facultad-git\programacionII\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.AssemblyReference.cache
+E:\Facultad\facultad-git\programacionII\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.SuggestedBindingRedirects.cache
+E:\Facultad\facultad-git\programacionII\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+E:\Facultad\facultad-git\programacionII\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+E:\Facultad\facultad-git\programacionII\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+E:\Facultad\facultad-git\programacionII\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+E:\Facultad\facultad-git\programacionII\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+E:\Facultad\facultad-git\programacionII\ConsoleApp1\obj\Debug\ConsoleApp1.pdb

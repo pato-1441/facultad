@@ -1,0 +1,11 @@
+E:\Facultad\facultad-git\programacionII\SistemaBoleteria\bin\Debug\SistemaBoleteria.exe.config
+E:\Facultad\facultad-git\programacionII\SistemaBoleteria\bin\Debug\SistemaBoleteria.exe
+E:\Facultad\facultad-git\programacionII\SistemaBoleteria\bin\Debug\SistemaBoleteria.pdb
+E:\Facultad\facultad-git\programacionII\SistemaBoleteria\obj\Debug\SistemaBoleteria.csproj.AssemblyReference.cache
+E:\Facultad\facultad-git\programacionII\SistemaBoleteria\obj\Debug\SistemaBoleteria.csproj.SuggestedBindingRedirects.cache
+E:\Facultad\facultad-git\programacionII\SistemaBoleteria\obj\Debug\SistemaBoleteria.Form1.resources
+E:\Facultad\facultad-git\programacionII\SistemaBoleteria\obj\Debug\SistemaBoleteria.Properties.Resources.resources
+E:\Facultad\facultad-git\programacionII\SistemaBoleteria\obj\Debug\SistemaBoleteria.csproj.GenerateResource.cache
+E:\Facultad\facultad-git\programacionII\SistemaBoleteria\obj\Debug\SistemaBoleteria.csproj.CoreCompileInputs.cache
+E:\Facultad\facultad-git\programacionII\SistemaBoleteria\obj\Debug\SistemaBoleteria.exe
+E:\Facultad\facultad-git\programacionII\SistemaBoleteria\obj\Debug\SistemaBoleteria.pdb
