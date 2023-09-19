@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 
 namespace ConsoleApp3
 {
@@ -31,7 +32,37 @@ namespace ConsoleApp3
             {
                 Console.WriteLine(FormatearTexto(nom));
             }
+            Console.WriteLine("Presione una tecla para continuar a ejercicios validacion de Emails.");
             Console.ReadKey();
+
+            Console.WriteLine("pato@mail.com");
+            Console.WriteLine(ValidarCorreo("pato@mail.com"));
+            Console.WriteLine("pepemail.com");
+            Console.WriteLine(ValidarCorreo("pepemail.com"));
+            Console.ReadKey();
+
+            /*
+            Desarrolle un método que permita validar si una dirección 
+            de correo electrónico almacenada en una cadena de caracteres
+            es válida. Donde, se tienen por direcciones válidas aquellas
+            que: 
+            a. Tienen un buzón válido (la izquierda del símbolo @) 
+            b. Tienen solo una vez el símbolo @ 
+            c. Tienen un dominio válido (formado por letras y números, sin espacios y con puntos). 
+            */
+
+
+        }
+
+        private static bool ValidarCorreo(string correo)
+        {
+            bool valido = false;
+            Regex regex = new Regex(@"^\S+@\S+\.\S+$");
+            if (regex.IsMatch(correo))
+            {
+                valido = true;
+            }
+            return valido;
         }
 
         private static string FormatearTexto(string nom)
